@@ -35,14 +35,4 @@
     box-shadow: 1px 2px 3px #eee;
     border-radius: 10px;
     box-sizing: border-box;
-    transition: transform 0.3s ease;
-}
-
-.gallery-item {
-    overflow: hidden;
-    position: relative;
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
 }
