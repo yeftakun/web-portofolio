@@ -35,6 +35,10 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+.navbar {
+    display: flex;
+}
+
 .navbar a {
     display: inline-block;
     font-size: 18px;
@@ -259,3 +263,73 @@ body {
         border-color: #0ef;
     }
 }
+
+/* Drop down contact */
+/* Tambahkan gaya untuk dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .contact {
+    background-color: #555;
+    color: white;
+}
+
+/* Tambahkan gaya untuk dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .contact {
+    background-color: #555;
+    color: white;
+}
+
