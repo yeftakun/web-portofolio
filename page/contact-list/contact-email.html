@@ -31,8 +31,8 @@
     </header>
     
     <div class="container">
-        <form id="emailForm" action="mailto:yeftakun34@gmail.com" method="post" enctype="text/plain">
-            <h3>Hubungi di E-mail</h3>
+        <form id="emailForm" action="mailto:yeftakun34@gmail.com" method="post" enctype="text/plain" onsubmit="return validateEmail()">
+            <h3>Hubungi saya lewat E-mail</h3>
             <input type="text" id="emailName" placeholder="Your Name" required>
             <input type="email" id="emailAddress" placeholder="Your E-mail" required>
             <input type="text" id="emailPhone" placeholder="Phone no." required>

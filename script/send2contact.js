@@ -22,8 +22,18 @@ function sendWhatsApp() {
     const email = document.getElementById('whatsappEmail').value;
     const phone = document.getElementById('whatsappPhone').value;
     const message = document.getElementById('whatsappMessage').value;
-    const encodedMessage = encodeURIComponent(`${name}%0a${email}%0a${phone}%0a${message}`);
+    const encodedMessage = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\nNo.Telp:${phone}\n${message}`);
 
     const whatsappUrl = `https://wa.me/6285775471308/?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
+}
+
+function validateEmail() {
+    var email = document.getElementById("emailAddress").value;
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        alert("Invalid email format. Please enter a valid email address.");
+        return false;
+    }
+    return true;
 }
